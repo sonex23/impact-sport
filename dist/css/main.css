@@ -2,9 +2,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* tambah background */
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  background-image: url('/assets/img/fionn-grosse-G5uasfXjZdc-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .header-container {
+  position: fixed;
   width: 100%;
   background-color: black;
   color: white;
@@ -70,7 +83,16 @@
   width: 100%;
 }
 
+/* tambah highlight buat h1 */
+mark {
+  color: white;
+  background-color: black;
+}
+
 .footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
   width: 100%;
   background-color: black;
   color: white;
@@ -79,8 +101,8 @@
 .footer-wrapper .footer {
   width: 80%;
   margin: 0 auto;
-  padding: 1em 0;
   text-align: center;
+  padding: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
