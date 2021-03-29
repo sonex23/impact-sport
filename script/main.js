@@ -67,6 +67,7 @@ function showMatches(data) {
                 <p class="score-number">${data.score.fullTime.awayTeam === null ? '0' : data.score.fullTime.awayTeam}</p>
             </div>
         </div>
+
         <div class="time-matches">
             <p>${data.utcDate}</p>
         </div>
