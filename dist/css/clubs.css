@@ -5,90 +5,13 @@
   padding: 0;
 }
 
-.header-container {
-  width: 100%;
-  background-color: black;
-  color: white;
-  font-family: "Poppins", sans-serif;
-}
-.header-container .header {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  height: 80px;
-  align-items: center;
-}
-.header-container .header .logo {
-  font-size: 1.5em;
-}
-.header-container .header .logo h3 a {
-  text-decoration: none;
-  color: white;
-}
-.header-container .header .list-menu {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-.header-container .header .list-menu li {
-  list-style: none;
-}
-.header-container .header .list-menu li a {
-  text-decoration: none;
-  color: white;
-}
-.header-container .header .list-menu li a:hover {
-  color: #cecccf;
-}
-
-.content-wrapper {
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-}
-.content-wrapper .content {
-  width: 80%;
-  margin: 0 auto;
-}
-.content-wrapper .content .content-satu-wrapper {
-  display: flex;
-  justify-content: space-between;
-  height: 90vh;
-  align-items: center;
-}
-.content-wrapper .content .content-satu-wrapper .bigger-text {
-  width: 50%;
-  font-size: 27px;
-}
-.content-wrapper .content .content-satu-wrapper .bigger-text h1 {
-  margin: 1em 0;
-}
-.content-wrapper .content .content-satu-wrapper .imgbg {
-  display: flex;
-  justify-content: flex-end;
-}
-.content-wrapper .content .content-satu-wrapper .imgbg img {
-  width: 100%;
-}
-
-.footer-wrapper {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  font-family: "Poppins", sans-serif;
-}
-.footer-wrapper .footer {
-  width: 80%;
-  margin: 0 auto;
-  padding: 1em 0;
-  text-align: center;
-}
-
-* {
+body {
+  position: relative;
   margin: 0;
-  padding: 0;
+  /* background-image: url('/assets/img/fionn-grosse-G5uasfXjZdc-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
 }
 
 .header-container {
@@ -158,12 +81,15 @@
 }
 
 .footer-wrapper {
+  margin-top: 50px;
+  position: absolute;
   width: 100%;
   background-color: black;
   color: white;
   font-family: "Poppins", sans-serif;
 }
 .footer-wrapper .footer {
+  bottom: 0;
   width: 80%;
   margin: 0 auto;
   padding: 1em 0;
@@ -179,7 +105,6 @@
 
 .content-wrapper {
   width: 100%;
-  height: 100vh;
 }
 .content-wrapper .content {
   display: flex;
@@ -229,9 +154,6 @@
   font-weight: bold;
 }
 
-.content-wrapper {
-  height: 100vh;
-}
 .content-wrapper .content .list-club-container {
   width: 70%;
   display: grid;
@@ -239,6 +161,7 @@
   gap: 1em;
 }
 .content-wrapper .content .list-club-container .list-club {
+  text-align: center;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -250,10 +173,26 @@
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .content-wrapper .content .list-club-container .list-club img {
-  width: 100px;
+  text-align: center;
+  max-width: 50%;
+  margin: 10px;
+  width: 80px;
 }
 .content-wrapper .content .list-club-container .list-club img p {
   text-align: center;
+}
+
+.modal-header {
+  background-color: grey;
+}
+
+.modal-title {
+  color: white;
+}
+
+.container-fluid .row {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=clubs.css.map */

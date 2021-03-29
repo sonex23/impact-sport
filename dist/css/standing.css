@@ -81,7 +81,6 @@ body {
 }
 
 .footer-wrapper {
-  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: black;
@@ -159,6 +158,9 @@ body {
   text-align: center;
 }
 .content-wrapper .content .table tbody tr td {
+  text-align: center;
+}
+.content-wrapper .content .table tbody tr th {
   text-align: center;
 }
 .content-wrapper .content .table tbody tr td .action-btn {

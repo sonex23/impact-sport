@@ -1,4 +1,4 @@
-const api_key = "b864eea518104ee49de111f1d442d85e";
+const api_key = "db8a26b5d9654afeb8f780ccf63d59e3";
 
 // default standings page
 fetch('http://api.football-data.org/v2/competitions/PL/standings', {
@@ -166,7 +166,7 @@ function showRank(m) {
     let form = m.form;
     let newForm = form.replace(/[^\w\s]/gi, '');
     return `<tr>
-    <th class="row">${m.position}</th>
+    <th class="text-center">${m.position}</th>
     <td><img src="${m.team.crestUrl}" class="logo-in-cell"></td>
     <td>${m.team.name}</td>
     <td>${m.points}</td>
